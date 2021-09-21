@@ -8,13 +8,21 @@ namespace learn_.net_1_21_09_2021
         {
             for(int i = 0; i <= 200; i++)
             {
-                if (i % 3 == 0)
+                if(i % 3 == 0 && i % 5 == 0)
                 {
-                    Console.WriteLine("Fizz");
+                    Console.WriteLine($"{i} FizzBuzz");
                 }
-                if (i % 5 == 0)
+                else if(i % 5 == 0)
                 {
-                    Console.WriteLine("Buzz");
+                    Console.WriteLine($"{i} Buzz");
+                }
+                else if(i % 3 == 0)
+                {
+                    Console.WriteLine($"{i} Fizz");
+                }
+                else
+                {
+                    Console.WriteLine(i);
                 }
             }
         }
